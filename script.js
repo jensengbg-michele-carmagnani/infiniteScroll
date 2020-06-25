@@ -35,6 +35,7 @@ async function showPosts() {
 function showLoading() {
   loading.classList.add("show");
   setTimeout(() => {
+    loading.classList.remove("show");
     setTimeout(() => {
       page++;
       showPosts();
